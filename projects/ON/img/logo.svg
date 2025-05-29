@@ -1,0 +1,9 @@
+<svg width="37" height="57" viewBox="0 0 37 57" fill="black" xmlns="http://www.w3.org/2000/svg">
+<path d="M30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71573 6.71573 0 15 0C23.2843 0 30 6.71573 30 15ZM4.5707 15C4.5707 20.7599 9.24006 25.4293 15 25.4293C20.7599 25.4293 25.4293 20.7599 25.4293 15C25.4293 9.24006 20.7599 4.5707 15 4.5707C9.24006 4.5707 4.5707 9.24006 4.5707 15Z" fill="black"/>
+<rect x="15" y="2" width="5" height="51" fill="black"/>
+<rect x="32" y="3" width="5" height="50" fill="black"/>
+<rect y="53" width="2" height="37" transform="rotate(-90 0 53)" fill="black"/>
+<rect y="55" width="1" height="37" transform="rotate(-90 0 55)" fill="black"/>
+<rect width="0.5" height="37" transform="matrix(0 1 1 0 0 56)" fill="black"/>
+<path d="M15.1766 6.77816C14.9877 6.25919 15.2553 5.68534 15.7743 5.49645L19.8303 4.02018L36.9957 51.1817L32 53L15.1766 6.77816Z" fill="black"/>
+</svg>

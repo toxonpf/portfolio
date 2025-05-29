@@ -1,0 +1,115 @@
+@media (max-width: 1200px) {
+    body {
+        letter-spacing: 1px;
+    }
+
+    #relSiteBlock1 {
+        margin: 200px 150px 0px 150px;
+    }
+
+    #relSiteBlock2 {
+        margin: 0px 150px 0px 150px;
+    }
+
+    #relSiteBlock3 {
+        margin: 0px 150px 0px 150px;
+    }
+
+    #labelHeader {
+        font-size: 2.9em;
+    }
+
+    #lebelcontent {
+        font-size: 1.25em;
+    }
+
+    #labelAbout {
+        font-size: 2.9em;
+    }
+
+    #photoLabel {
+        font-size: 1.25em;
+    }
+
+    #labelImg img {
+        margin: 0px;
+    }
+
+    #lebelcontent {
+        margin-right: 20px;
+    }
+
+    #labelImg img {
+        width: 80%;
+        position: absolute;
+        top: 500px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.1;
+        z-index: -2;
+    }
+
+    #labelText {
+        z-index: 1;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 1070px) {
+    #photo{
+        display: none;
+    }
+
+    #MEDIA_photo{
+        width: 0vw;
+        height: 0vw;
+        position: absolute;
+        background-color: white;
+        border-radius: 50%;
+        transform: translate(-10%, -47%);
+    }
+
+    #relSiteBlock2{
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 900px) {
+    #DECORATE_LabelCircle{
+        width: 300px;
+        height: 300px;
+        left: -15vw;
+    }
+
+    .stackElem{
+        min-width: 190px;
+        height: 180px;
+        margin: 20px;
+        & img {
+            width: 80px;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    #navbar {
+        background-color: black;
+        mix-blend-mode: normal;
+    }
+
+    #navButtonText{
+        display: none;
+    }
+
+    #navButtonIcon{
+        display: block;
+    }
+    
+    #DECORATE_LabelCircle{
+        display: none;
+    }
+    
+    #relSiteBlock1, #relSiteBlock2, #relSiteBlock3{
+        margin: 100px 100px 0px 100px;
+    }
+}

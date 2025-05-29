@@ -1,0 +1,17 @@
+#loginPopup{
+    width: 400px;
+    position: fixed;
+    left: calc(50% - 200px);
+    background-color: #fff;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#loginPopupRel{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: transparent;
+    z-index: 10;
+    display: none;
+}

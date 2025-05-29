@@ -1,0 +1,50 @@
+@media (max-width: 1350px) {
+    #siteElement2MEDIABlock{
+        display: none;
+    }
+
+    #siteElement2{
+        padding-left: 40px;
+    }
+}
+
+@media (max-width: 925px) {
+    #siteElement2BlocksMEDIA img{
+        display: none;
+    }
+
+    #siteElement2BlocksCHILDMEDIA{
+        text-align: end;
+        vertical-align: bottom;
+    }
+
+    #MEDIAPOBLEMBLOCK1{
+        display: none;
+    }
+}
+
+@media (max-width: 830px) {
+    #siteElement2BlocksMEDIA2{
+        display: none;
+    }
+
+    #siteElement2BlocksCHILDMEDIA{
+        display: none;
+    }
+
+    #siteElement2BlocksSircleHeaderMEDIA{
+        display: block;
+        line-height: 43px;
+        margin: 0px !important;
+        padding: 0px !important;
+        text-align: center;
+    }
+
+    #siteElement2BlocksSircleCHILDMEDIA{
+        padding: 154px 0px 0px 0px !important;
+    }
+
+    #siteElement2BlocksSircle{
+        margin-top: 0px;
+    }
+}

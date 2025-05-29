@@ -1,0 +1,31 @@
+#DECORATE_LabelCircle {
+    position: absolute;
+    top: -30vh;
+    left: -20vw;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 0;
+}
+  
+#DECORATE_aboutLine {
+    position: absolute;
+    left: -10vw;
+    width: 120%; 
+    height: 9vw; 
+    background-color: white;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    mix-blend-mode: difference;
+} 
+
+#DECORATE_swiperLine{
+    width: 110vw;
+    display: flex;
+    background-color: white;
+    padding: 60px;
+    position: absolute;
+    top: 42%;
+}

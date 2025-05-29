@@ -1,0 +1,118 @@
+#topImage img {
+    animation: 1.3s ease topImage;
+}
+
+@keyframes topImage {
+    0% {
+        opacity: 0;
+        top: 300px;
+    }
+
+    20% {
+        opacity: 0;
+        top: 300px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+}
+
+#topImageHeader {
+    animation: 1.8s ease topImageHeader;
+}
+
+@keyframes topImageHeader {
+    0% {
+        opacity: 0;
+        left: 300px;
+    }
+
+    30% {
+        opacity: 0;
+        left: 300px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+#topImageText {
+    animation: 2s ease topImageHeader;
+}
+
+@keyframes topImageText {
+    0% {
+        opacity: 0;
+        left: 300px;
+    }
+
+    70% {
+        opacity: 0;
+        left: 300px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+#arrowSVG {
+    animation: 1.2s ease arrowAppeared;
+}
+
+@keyframes arrowAppeared {
+    0% {
+        top: 150px;
+        opacity: 0;
+    }
+
+    30% {
+        top: 150px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+/* JSAnim element */
+@keyframes arrowSVG {
+    0% {
+        opacity: 1;
+        bottom: 0px;
+    }
+
+    100% {
+        opacity: 0;
+        bottom: 150px;
+    }
+}
+
+/* JSAnim element */
+@keyframes loginPopup {
+    0%{
+        top: 110%;
+    }
+
+    100%{
+        top: 30%;
+    }
+}
+
+/* JSAnim element */
+@keyframes BCDarcer {
+    0%{
+        background-color: transparent;
+    }
+
+    100%{
+        background-color: #00000088;
+    }
+}

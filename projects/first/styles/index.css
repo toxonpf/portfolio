@@ -1,0 +1,27 @@
+@font-face {
+    font-family: main;
+    src: url(../fonts/SourceCodePro.ttf);
+}
+
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    font-family: main;
+    flex-direction: column;
+}
+
+#header{
+    font-size: 4rem;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+#main{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
