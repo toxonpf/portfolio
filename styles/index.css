@@ -45,11 +45,9 @@ iframe {
   top: -20px;
   left: -20px;
   pointer-events: none;
-  transition: all 0.05s;
   font-size: 50px;
   z-index: 1000;
   mix-blend-mode: difference;
-  transition: all 0.02s;
 }
 
 ::-webkit-scrollbar {
