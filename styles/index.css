@@ -39,7 +39,7 @@ iframe {
   border: 0px;
 }
 
-.circle {
+.circle{
   position: fixed;
   border-radius: 100%;
   top: -20px;
@@ -48,6 +48,10 @@ iframe {
   font-size: 50px;
   z-index: 1000;
   mix-blend-mode: difference;
+  transition: opacity 0.3s;
+  & img{
+    width: 35px;
+  }
 }
 
 ::-webkit-scrollbar {
