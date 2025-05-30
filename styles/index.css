@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 body {
@@ -38,13 +39,13 @@ iframe {
   border: 0px;
 }
 
-.circle{
+.circle {
   position: fixed;
   border-radius: 100%;
   top: -20px;
   left: -20px;
   pointer-events: none;
-  font-size: 50px; 
+  font-size: 50px;
   z-index: 1000;
   mix-blend-mode: difference;
   transition: opacity 0.3s;
@@ -52,7 +53,8 @@ iframe {
   border-radius: 10px;
   opacity: 0;
   margin: -20px 0px 0px -10px;
-  & img{
+
+  & img {
     width: 35px;
   }
 }
@@ -452,6 +454,11 @@ contentStack {
   order: 10;
   color: white;
   user-select: none;
+
+  &:hover {
+    transform: rotate(90deg);
+    transition: all 0.3s;
+  }
 }
 
 #relSiteBlock4 {
@@ -502,6 +509,14 @@ contentStack {
 
   & img {
     width: 50px;
+  }
+
+  & div {
+    transition: all 0.2s;
+  }
+
+  & div:hover {
+    transform: scale(1.1);
   }
 }
 
