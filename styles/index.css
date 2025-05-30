@@ -49,6 +49,9 @@ iframe {
   z-index: 1000;
   mix-blend-mode: difference;
   transition: opacity 0.3s;
+  padding: 10px;
+  border-radius: 10px;
+
   & img{
     width: 35px;
   }
