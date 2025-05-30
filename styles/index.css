@@ -5,7 +5,6 @@
 
 html {
   scroll-behavior: smooth;
-  cursor: none;
 }
 
 body {
@@ -45,13 +44,14 @@ iframe {
   top: -20px;
   left: -20px;
   pointer-events: none;
-  font-size: 50px;
+  font-size: 50px; 
   z-index: 1000;
   mix-blend-mode: difference;
   transition: opacity 0.3s;
   padding: 10px;
   border-radius: 10px;
-
+  opacity: 0;
+  margin: -20px 0px 0px -10px;
   & img{
     width: 35px;
   }

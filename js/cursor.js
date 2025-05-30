@@ -62,6 +62,7 @@ const tick = () => {
 
 setTimeout(() => {
     tick();
+    circleElement.style.opacity = '1';
 }, 4000);
 
 $(document).ready(function () {
