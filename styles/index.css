@@ -53,6 +53,7 @@ iframe {
   border-radius: 10px;
   opacity: 0;
   margin: -20px 0px 0px -10px;
+  pointer-events: none;
 
   & img {
     width: 35px;
@@ -174,6 +175,9 @@ iframe {
   padding: 20px;
   font-size: 35px;
   cursor: none;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
 }
 
 #navClose {
