@@ -5,19 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOXON`s portfolio</title>
-    <link rel="stylesheet" href="styles/index.css"> 
+    <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/animations.css">
     <link rel="stylesheet" href="styles/decorates.css">
     <link rel="stylesheet" href="styles/media.css">
 
     <script src="js/jquery-3.7.1.min.js"></script>
-    <link rel="shortcut icon" href="img/logo.svg">  
+    <script src="js/lottie.min.js"></script>
+    <link rel="shortcut icon" href="img/logo.svg">
 </head>
 
 <body>
     <div class="circle"><img src="img/arrow.svg" alt=">"></div>
     <div id="openingRel">
-        <div id="openingText"><div id="call"></div><div id="appearedText"></div></div>
+        <div id="openingText">
+            <div id="call"></div>
+            <div id="appearedText"></div>
+        </div>
     </div>
     <div id="wrapper">
         <div id="navbar">
@@ -252,8 +256,8 @@
         </div>
     </div>
 
-    <script src="js/opening.js"></script>
     <script src="js/appearedLettersAnnim.js"></script>
+    <script src="js/opening.js"></script>
     <script src="js/scrollArrow.js"></script>
     <script src="js/scrollAnimation.js"></script>
     <script src="js/stackAnimation.js"></script>
@@ -262,19 +266,7 @@
     <script src="js/animations.js"></script>
     <script src="js/media.js"></script>
     <script src="js/cursor.js"></script>
-
-    <!-- img animate part -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
-    <script>
-        var animation = lottie.loadAnimation({
-            container: document.getElementById('lottie-animation'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: 'img/buttonArrow.json'
-        });
-
-    </script>
+    <script src="js/lottie.connect.js"></script>
 </body>
 
 </html>

@@ -11,7 +11,7 @@ async function addStack(element) {
         element.children[i].style.animation = '0.3s forwards animElem1';
         element.children[i].addEventListener('click', () => {
             $('#navbar').slideUp(500);
-            let stackStyle = { 
+            let stackStyle = {
                 paddingTop: element.children[i].style.paddingTop,
                 marginTop: element.children[i].children[0].children[0].style.marginTop,
                 outline: element.children[i].style.outline
@@ -22,7 +22,7 @@ async function addStack(element) {
             setTimeout(() => {
                 let duplicateStackElem = stackInf(element.children[i]);
                 document.body.style.overflow = 'hidden';
-                
+
                 setTimeout(() => {
                     duplicateStackElem.style.animation = '1s forwards stackInf';
                     duplicateStackElem.children[0].style.animation = '1s forwards stackImgInf';
@@ -93,6 +93,14 @@ function stackInf(stack) {
 
     duplicateStackElem.style.width = stack.offsetWidth + 'px';
     duplicateStackElem.style.height = stack.offsetHeight + 'px';
+
+    // Найти оригинальное изображение и скопировать размеры
+    const origImg = stack.querySelector('img');
+    const copyImg = duplicateStackElem.querySelector('img');
+    if (origImg && copyImg) {
+        copyImg.style.width = origImg.offsetWidth + 'px';
+        copyImg.style.height = origImg.offsetHeight + 'px';
+    }
 
     document.body.appendChild(duplicateStackElem);
     duplicateStackElem.style.transition = 'all 0.3s ease-in-out';

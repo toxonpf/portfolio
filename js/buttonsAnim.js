@@ -37,8 +37,7 @@ function navButtonIcon() {
     const MediaBurgerBlock = document.createElement('div');
     
     MediaBurgerBlock.className = 'mediaBurgerBlock';
-    $('#navbar').height()
-    MediaBurgerBlock.css('top', '0');
+    $('#navbar').height();
 }
 
 navButtonIcon();

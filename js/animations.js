@@ -115,5 +115,4 @@ function animateLogo() {
         }, 20);
     }, 300);
 }
-
 logo.addEventListener('mouseenter', animateLogo);

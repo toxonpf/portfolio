@@ -5,7 +5,6 @@
 
 html {
   scroll-behavior: smooth;
-  cursor: none;
 }
 
 body {
@@ -583,7 +582,7 @@ contentStack {
   align-items: center;
   margin: 0px 100px 50px 100px;
   background-color: #fff;
-  padding: 20px 50px 21px 50px;
+  padding: 21px;
   color: #000;
   font-size: 25px;
   border-radius: 20px;
@@ -616,4 +615,26 @@ contentStack {
     padding: 10px;
     border-radius: 20px;
   }
+}
+
+#DECORATE_boppl1 {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  position: relative;
+  top: 10px;
+  left: 10vw;
+  border-radius: 50%;
+  color: #000;
+}
+
+#DECORATE_boppl2 {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  position: relative;
+  top: 50px;
+  left: 80vw;
+  border-radius: 50%;
+  color: #000;
 }
