@@ -27,7 +27,14 @@ if (canRunAnimation()) {
         return new Promise(resolve => setTimeout(resolve, 40))
     }
 
-    openingText.firstChild.style.color = "white";
+    // Проверяем наличие дочернего элемента, если нет — создаём
+    let span = openingText.querySelector('span');
+    if (!span) {
+        span = document.createElement('span');
+        openingText.appendChild(span);
+    }
+    span.style.color = "white";
+
     async function addLetter() {
         for (let i = 0; i < call.length; i++) {
             await sleep();
@@ -35,7 +42,7 @@ if (canRunAnimation()) {
             letterBlock.className = "addLetter";
             letterBlock.innerHTML = call[i];
             letterBlock.style.animation = '0.3s forwards addLetter';
-            openingText.firstChild.appendChild(letterBlock);
+            span.appendChild(letterBlock);
         }
     }
     addLetter();
