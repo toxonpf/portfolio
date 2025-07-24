@@ -9,7 +9,7 @@ window.onload = function () {
 };
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
-};
+}; 
 
 var FIVE_MINUTES = 5 * 60 * 1000;
 var LAST_ANIMATION_KEY = 'lastOpeningAnimation';

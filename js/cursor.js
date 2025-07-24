@@ -59,11 +59,8 @@ const tick = () => {
 
     window.requestAnimationFrame(tick);
 };
-
-setTimeout(() => {
-    tick();
-    circleElement.style.opacity = '1';
-}, 4000);
+tick();
+circleElement.style.opacity = '1';
 
 $(document).ready(function () {
     const $circle = $('.circle');

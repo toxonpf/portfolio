@@ -154,8 +154,19 @@ iframe {
 }
 
 #mediaBurgerBlock {
-  display: flex;
+  height: 0px;
+  overflow: hidden;
+  background-color: black !important;
   position: fixed;
+  right: 0;
+  top: 84px;
+  text-align: end;
+  transition: height 0.3s ease, background-color 0.3s;
+  overflow: hidden;
+  height: 0;
+  z-index: 4;
+  border-radius: 0px 0px 0px 20px;
+  scrollbar-width: none;
 }
 
 .navButtonsBlockBurgerButton {
@@ -168,7 +179,37 @@ iframe {
 }
 
 #navButtonIcon {
-  display: none;
+  padding: 20px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+
+  & span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    margin: 5px 0;
+    border-radius: 2px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  &.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  &.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+  &.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }
 
 #logo {

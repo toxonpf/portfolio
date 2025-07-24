@@ -1,0 +1,28 @@
+#navButtonIcon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+#navButtonIcon span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+  position: relative;
+}
+#navButtonIcon.open span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+#navButtonIcon.open span:nth-child(2) {
+  opacity: 0;
+}
+#navButtonIcon.open span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
