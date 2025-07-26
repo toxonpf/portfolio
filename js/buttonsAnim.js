@@ -66,7 +66,7 @@ function navButtonIconOpen() {
     });
 
     // При ресайзе тоже убираем класс open
-    $(window).on('resize', () => {
+    function handleNavOnResize() {
         if ($(window).width() > 860) {
             // Возвращаем всё как для десктопа
             mediaBurgerBlock.css({
@@ -88,7 +88,12 @@ function navButtonIconOpen() {
             $('#navButtonIcon').show();
             $('#navButtonText').hide();
         }
-    });
+    }
+
+    $(window).on('resize', handleNavOnResize);
+
+    // Вызовем при первой загрузке страницы
+    handleNavOnResize();
 
     // При клике на ссылку внутри mediaBurgerBlock — сворачиваем меню
     mediaBurgerBlock.on('click', 'a', function () {
