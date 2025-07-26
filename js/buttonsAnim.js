@@ -36,7 +36,7 @@ function navButtonIconOpen() {
     const navButtonsBlockLinks = $('#navButtonsBlock a');
     const mediaBurgerBlock = $('#mediaBurgerBlock');
     const navButtonIcon = $('#navButtonIcon');
-    mediaBurgerBlock.append(navButtonsBlockLinks);
+    mediaBurgerBlock.empty().append(navButtonsBlockLinks.clone());
 
     $(window).on('resize', () => {
         mediaBurgerBlock.css({
@@ -44,7 +44,6 @@ function navButtonIconOpen() {
             'overflow': 'hidden',
             'background-color': ''
         });
-        navButtonIcon.html('<img src="img/menu.svg" alt="">');
     });
 
     navButtonIcon.on('click', () => {
@@ -68,12 +67,27 @@ function navButtonIconOpen() {
 
     // При ресайзе тоже убираем класс open
     $(window).on('resize', () => {
-        mediaBurgerBlock.css({
-            'height': '0px',
-            'overflow': 'hidden',
-            'background-color': ''
-        });
-        navButtonIcon.removeClass('open');
+        if ($(window).width() > 860) {
+            // Возвращаем всё как для десктопа
+            mediaBurgerBlock.css({
+                'height': '',
+                'overflow': '',
+                'background-color': ''
+            });
+            navButtonIcon.removeClass('open');
+            $('#navButtonIcon').hide();
+            $('#navButtonText').show();
+        } else {
+            // Для мобильного — скрываем меню
+            mediaBurgerBlock.css({
+                'height': '0px',
+                'overflow': 'hidden',
+                'background-color': ''
+            });
+            navButtonIcon.removeClass('open');
+            $('#navButtonIcon').show();
+            $('#navButtonText').hide();
+        }
     });
 
     // При клике на ссылку внутри mediaBurgerBlock — сворачиваем меню
@@ -88,6 +102,16 @@ function navButtonIconOpen() {
 
     // При клике на .stackElem — тоже сворачиваем меню
     mediaBurgerBlock.on('click', '.stackElem', function () {
+        mediaBurgerBlock.css({
+            'height': '0px',
+            'overflow': 'hidden',
+            'background-color': ''
+        });
+        navButtonIcon.removeClass('open');
+    });
+
+    // При прокрутке страницы — сворачиваем меню
+    $(window).on('scroll', () => {
         mediaBurgerBlock.css({
             'height': '0px',
             'overflow': 'hidden',
