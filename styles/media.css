@@ -63,6 +63,10 @@
         border-radius: 0px;
         
     }
+
+    #mediaDestroy_navButton{
+        display: none;
+    }
 }
 
 @media (max-width: 1070px) {
