@@ -3,5 +3,5 @@ var animation = lottie.loadAnimation({
     renderer: 'svg',
     loop: true,
     autoplay: true,
-    path: '../img/json/buttonArrow.json'
+    path: 'https://raw.githubusercontent.com/toxonpf/portfolio/refs/heads/main/js/lottie.connect.js'
 });
