@@ -116,3 +116,14 @@ function animateLogo() {
     }, 300);
 }
 logo.addEventListener('mouseenter', animateLogo);
+
+function animElem1_deleteDelay(){
+    setTimeout(() =>{
+        const animElem1 = document.querySelectorAll('.animElem1');
+        animElem1.forEach(elem => {
+            elem.style.animationDelay = '0s';
+        });
+    }, 4100);
+
+}
+animElem1_deleteDelay();
