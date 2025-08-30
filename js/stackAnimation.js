@@ -44,7 +44,6 @@ async function addStack(element) {
 
                     const stackClose = document.createElement('div');
                     stackClose.className = 'stackClose';
-                    stackClose.innerText = '☓';
                     stackClose.addEventListener('click', () => {
                         $('#navbar').show(0);
                         duplicateStackElem.style.animation = '1s forwards stackInfClose';
