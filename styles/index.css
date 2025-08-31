@@ -384,10 +384,11 @@ iframe {
   justify-content: space-between;
 }
 
-#stackClose{
+.stackClose{
   width: 40px;
   height: 40px;
-  background-color: url("../img/close.svg");
+  background-image: url("../img/close.svg");
+  background-size: cover;
 }
 
 #stacksHeader {
